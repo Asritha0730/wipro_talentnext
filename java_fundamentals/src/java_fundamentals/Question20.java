@@ -20,6 +20,7 @@ public class Question20 {
        } else {
            System.out.println(num2+ " is not a palindrome number.");
        }
+
 	}
 	
 }
