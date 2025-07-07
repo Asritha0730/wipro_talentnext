@@ -1,4 +1,4 @@
-package java_fundamentals;
+package Arrays;
 
 import java.util.Scanner;
 
@@ -16,7 +16,6 @@ public class Question34 {
 	            	 if (arr[i][j] > max) {
 	                     max = arr[i][j];
 	                 }
-	            	 index++;
 	             }
 	      }
 		    System.out.println("The given array is :");
