@@ -8,18 +8,18 @@ public class Question8 {
         System.out.println("Enter string:");
         String str = sc.nextLine();
 
-        boolean[] remove = new boolean[str.length()]; // marks for deletion
+        boolean[] remove = new boolean[str.length()]; 
 
-        // First pass: mark characters to remove
+      
         for (int i = 0; i < str.length(); i++) {
             if (str.charAt(i) == '*') {
-                if (i > 0) remove[i - 1] = true;     // char before '*'
-                remove[i] = true;                    // the '*'
-                if (i < str.length() - 1) remove[i + 1] = true; // char after '*'
+                if (i > 0) remove[i - 1] = true;     
+                remove[i] = true;                    
+                if (i < str.length() - 1) remove[i + 1] = true;
             }
         }
 
-        // Second pass: build the result
+  
         StringBuilder result = new StringBuilder();
         for (int i = 0; i < str.length(); i++) {
             if (!remove[i]) {
