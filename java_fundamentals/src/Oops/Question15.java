@@ -25,7 +25,7 @@ public class Question15 {
 		Optional<Employe> op = Optional.ofNullable(emp);
 		
 		 Employe valid = op.orElseThrow(() ->
-         new InvalidEmployeeException("Employee object is null!")
+         new InvalidEmployeeException("Employee object is null")
      );
 		 System.out.println("Employee Name: " + valid.name);
 		

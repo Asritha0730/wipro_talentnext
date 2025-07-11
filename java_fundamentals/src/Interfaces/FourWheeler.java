@@ -1,0 +1,7 @@
+package Interfaces;
+
+public interface FourWheeler {
+     default void message() {
+    	 System.out.println("Inside FourWheeler");
+     }
+}
