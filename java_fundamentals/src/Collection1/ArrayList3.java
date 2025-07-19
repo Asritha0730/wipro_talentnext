@@ -12,10 +12,10 @@ public class ArrayList3 {
 		 num.add(123345L);
 		 
 		 System.out.println("numbers in List :");
-		 for(Number numbers:num) {
-			 System.out.println(numbers);
-		 }
-		 
+//		 for(Number numbers:num) {
+//			 System.out.println(numbers);
+//		 }
+		 num.forEach(number -> System.out.println(number));
 		 
 	 }
 }
